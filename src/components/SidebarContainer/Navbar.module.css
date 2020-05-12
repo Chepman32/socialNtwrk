@@ -1,0 +1,33 @@
+.nav {
+  grid-area: n;
+  background-color: burlywood;
+  padding: 20px;
+}
+.item a {
+  text-decoration: none;
+}
+.item {
+  color: #fff;
+}
+.item .activeLink {
+  color: gold;
+}
+.sideBar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo {
+  width: 80px;
+  height: 80px;
+  background: yellow;
+  border: 1px solid tomato;
+  border-radius: 10px;
+  margin: 20px;
+}
+.rButton {
+  background-color: transparent;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 0;
+}

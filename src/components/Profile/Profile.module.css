@@ -1,0 +1,12 @@
+.item {
+    padding: 10px;
+}
+.item img {
+    width: 50px;
+}
+.postsBlock {
+    padding-left: 10px;
+}
+.descriptionBlock {
+    margin-bottom: 10px;
+}
