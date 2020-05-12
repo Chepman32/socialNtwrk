@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import { setUserProfileActionCreator } from "../../redux/profile-reducer";
 import Axios from "axios";
 class ProfileContainer extends React.Component {
+  debugger
   componenDidMount() {
     Axios.get(`https://social-network.samuraijs.com/api/1.0/profile/2`).then(response => {
             console.log(response.data);
@@ -11,7 +12,7 @@ class ProfileContainer extends React.Component {
             });
   }
     render() {
-      return <Profile {...this.props} profile={this.props.profile} />
+      return <Profile profile={this.props.profile} {...this.props} />
     }
 };
 let mapStateToProps = state => ({
