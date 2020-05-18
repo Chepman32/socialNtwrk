@@ -26,9 +26,7 @@ const profileReducer = (state = initialState, action) => {
         return stateCopy;
     }
     case SET_USER_PROFILE:
-        console.log(action.profile);
         return {...state, profile: action.profile};
-        console.log(action.profile);
     default:
         return state;
     }

@@ -6,6 +6,6 @@
 .selectedPage {
     font-weight: bold;
 }
-.pages {
-    max-width: 800px;
+.usersBlock {
+    overflow-x: hidden;
 }
