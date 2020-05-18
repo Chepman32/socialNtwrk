@@ -1,7 +1,13 @@
 .header {
   grid-area: h;
+  display: flex;
   background-color: green;
+  justify-content: space-around;
 }
 .header img {
-  width: 20px;
+  width: 90px;
+}
+.loginLink {
+  text-decoration: none;
+  color: #fff;
 }

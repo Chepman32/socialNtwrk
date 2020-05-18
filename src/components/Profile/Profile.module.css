@@ -8,5 +8,7 @@
     padding-left: 10px;
 }
 .descriptionBlock {
+    padding-left: 15px;
     margin-bottom: 10px;
+    border-bottom: 2px solid black;
 }
