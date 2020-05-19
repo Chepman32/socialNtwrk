@@ -7,7 +7,9 @@ import Loader from "../../assets/glow.gif";
 class UsersAPIComponent extends React.Component {
     componentDidMount() {
         this.props.toggleIsFetching(true);
-        Axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`).then(response => {
+        Axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`, {
+            withCredentials: true
+        }).then(response => {
                 this.props.setUsersData(response.data.items);
                 this.props.setTotalUsersCount(response.data.totalCount);
                 this.props.toggleIsFetching(false);
