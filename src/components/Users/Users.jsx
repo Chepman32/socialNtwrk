@@ -30,8 +30,8 @@ let Users = (props) => {
                                 withCredentials: true
                             }).then(response => {
                                 if(response.data.resultCode == 0) {
-                                    this.props.setUser(response.data);
-                                }
+                                    props.unfollow(u.id)
+                                };
                                 });
                         }}>unfollow</button> :
                          <button onClick={()=> {
@@ -42,7 +42,7 @@ let Users = (props) => {
                                 }
                             }).then(response => {
                                 if(response.data.resultCode == 0) {
-                                    this.props.setUser(response.data);
+                                    props.follow(u.id)
                                 }
                                 });
                          }}>follow</button>}
